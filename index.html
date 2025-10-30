@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmacia Dott. Mariano Arcidiacono – Tremestieri Etneo</title>
+  <meta name="description" content="Farmacia Arcidiacono a Tremestieri Etneo (CT). Servizi farmaceutici, dermocosmesi, autoanalisi. Orari, contatti, indicazioni e aggiornamenti." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --fg:#e2e8f0; /* slate-200 */
+      --muted:#94a3b8; /* slate-400 */
+      --accent:#22c55e; /* green-500 */
+      --card:#111827ee; /* gray-900 */
+      --ring:#22c55e55;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--fg);background:radial-gradient(1200px 600px at 80% -10%, #1f2937 0%, #0b1222 60%, #070b17 100%),var(--bg)}
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg, rgba(7,11,23,0.95), rgba(7,11,23,0.6));backdrop-filter:blur(8px);border-bottom:1px solid #1e293b}
+    header .bar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo-badge{width:40px;height:40px;border-radius:12px;background:conic-gradient(from 120deg,#22c55e,#16a34a,#065f46);display:grid;place-items:center;box-shadow:0 0 0 4px #16a34a22}
+    .logo-badge svg{filter:drop-shadow(0 2px 8px #16a34a88)}
+    nav a{padding:10px 14px;border-radius:12px;color:var(--muted);text-decoration:none}
+    nav a:hover{color:var(--fg);background:#1f2937}
+
+    .hero{padding:80px 0 30px}
+    .hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 12px;font-weight:800;letter-spacing:.2px}
+    .hero p{color:var(--muted);max-width:720px;margin:10px 0 24px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;border:1px solid #1f2937;background:#0b1222;color:#e5e7eb;text-decoration:none;box-shadow:0 10px 30px #0006}
+    .btn:hover{outline:2px solid var(--ring);transform:translateY(-1px)}
+    .btn.accent{background:linear-gradient(180deg,#22c55e,#16a34a);color:#062315;border:none}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:linear-gradient(180deg,#0b1222,#0a1020);border:1px solid #1f2937;border-radius:18px;padding:18px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p,.card li,.meta{color:var(--muted)}
+    .meta{font-size:14px}
+
+    @media(min-width:800px){
+      .card.span6{grid-column:span 6}
+      .card.span4{grid-column:span 4}
+    }
+
+    .hours{display:grid;grid-template-columns:1fr auto;gap:8px;font-variant-numeric:tabular-nums}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#0b1222;border:1px solid #1f2937;color:#a7f3d0}
+
+    iframe.map{width:100%;height:320px;border:0;border-radius:14px;filter:grayscale(.2) contrast(1.1) saturate(.8)}
+
+    footer{margin:40px 0 20px;color:var(--muted);text-align:center;font-size:14px}
+    .sep{height:1px;background:linear-gradient(90deg,transparent,#22304a,transparent);margin:16px 0}
+  </style>
+  <!-- Schema.org JSON‑LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "Farmacia Dott. Mariano Arcidiacono",
+    "image": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Leonardo Da Vinci, 12/L",
+      "addressLocality": "Tremestieri Etneo",
+      "addressRegion": "CT",
+      "postalCode": "95030",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39 095 7250572",
+    "url": "https://farmaciaarcidiacono.it/",
+    "sameAs": ["https://www.facebook.com/farmaciaarcidiacono/"],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"13:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"16:30","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:30","closes":"13:00"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container bar">
+      <div class="logo" aria-label="Farmacia Arcidiacono logo">
+        <div class="logo-badge" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croce">
+            <path d="M10 2h4v6h6v4h-6v6h-4v-6H4V8h6V2z" fill="#052e1a"/>
+            <path d="M9.2 2.8h5.6v5.6h5.6v5.6h-5.6v5.6H9.2v-5.6H3.6V8.4h5.6V2.8z" stroke="#a7f3d0" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Farmacia Dott. Mariano Arcidiacono</strong><br>
+          <span class="meta">Tremestieri Etneo (CT)</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#servizi">Servizi</a>
+        <a href="#orari">Orari</a>
+        <a href="#contatti">Contatti</a>
+        <a href="https://www.facebook.com/farmaciaarcidiacono/" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>La tua farmacia di fiducia a Tremestieri Etneo</h1>
+      <p>Consulenza professionale, dermocosmesi, autoanalisi e servizi per la salute. Qui trovi indirizzo, orari aggiornati e contatti diretti. Per novità e turni consulta anche la nostra pagina Facebook.</p>
+      <div class="cta">
+        <a class="btn accent" href="tel:+390957250572" aria-label="Chiama la farmacia">📞 Chiama 095 725 0572</a>
+        <a class="btn" href="#mappa">🗺️ Indicazioni</a>
+        <a class="btn" href="mailto:info@farmaciaarcidiacono.it">✉️ Scrivici</a>
+      </div>
+    </section>
+
+    <section id="servizi" class="grid">
+      <article class="card span6">
+        <h3>Servizi principali</h3>
+        <ul>
+          <li>Consulenza farmaceutica e gestione terapie</li>
+          <li>Dermocosmesi e consulenze dedicate</li>
+          <li>Autoanalisi (glicemia, colesterolo, trigliceridi) *</li>
+          <li>Misurazione pressione e noleggi elettromedicali *</li>
+          <li>Vaccinazioni/servizi territoriali **</li>
+        </ul>
+        <p class="meta">* Verifica disponibilità in farmacia. ** In base a normative e calendari regionali.</p>
+      </article>
+      <article class="card span6">
+        <h3>Promo & aggiornamenti</h3>
+        <p>Segui la pagina Facebook per promozioni, giornate dedicate e turni di apertura.</p>
+        <a class="btn" href="https://www.facebook.com/farmaciaarcidiacono/" target="_blank" rel="noopener">Vai alla pagina Facebook</a>
+      </article>
+    </section>
+
+    <div class="sep"></div>
+
+    <section id="orari" class="grid">
+      <article class="card span6">
+        <h3>Orari</h3>
+        <div class="hours">
+          <div>Lunedì–Venerdì</div><div>08:30–13:00 • 16:30–20:00</div>
+          <div>Sabato</div><div>08:30–13:00</div>
+          <div>Domenica</div><div>Chiuso (salvo turni)</div>
+        </div>
+        <p class="meta">Gli orari possono variare nei giorni di turno. Controlla gli avvisi su Facebook prima di recarti in farmacia.</p>
+      </article>
+      <article class="card span6" id="contatti">
+        <h3>Contatti</h3>
+        <p><strong>Indirizzo:</strong> Via Leonardo Da Vinci, 12/L – 95030 Tremestieri Etneo (CT)</p>
+        <p><strong>Telefono:</strong> <a href="tel:+390957250572">095 725 0572</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@farmaciaarcidiacono.it">info@farmaciaarcidiacono.it</a></p>
+        <div class="cta">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Via%20Leonardo%20Da%20Vinci%2012%2FL%2C%2095030%20Tremestieri%20Etneo%20CT" target="_blank" rel="noopener">Apri in Google Maps</a>
+          <a class="btn" href="tel:+390957250572">Chiama ora</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="card" id="mappa" aria-label="Mappa">
+      <h3>Dove siamo</h3>
+      <iframe class="map" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Via%20Leonardo%20Da%20Vinci%2012%2FL%2C%2095030%20Tremestieri%20Etneo%20CT&output=embed">
+      </iframe>
+    </section>
+
+    <section class="card">
+      <h3>Note legali</h3>
+      <p class="meta">© <span id="year"></span> Farmacia Dott. Mariano Arcidiacono. Tutti i diritti riservati. | P.IVA <span id="piva">IT05012490875</span></p>
+      <p class="meta">Questo sito non effettua vendite online. Le informazioni mediche presenti hanno carattere divulgativo e non sostituiscono il parere del medico.</p>
+    </section>
+
+    <footer>
+      Realizzato con ❤️ per la comunità di Tremestieri Etneo.
+    </footer>
+  </main>
+
+  <script>
+    // utility
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
