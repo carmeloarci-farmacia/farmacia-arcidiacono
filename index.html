@@ -67,6 +67,41 @@
     .notice .actions{display:flex;gap:8px}
     .notice .actions a{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:#06151a;border:1px solid #163927;color:var(--muted);text-decoration:none}
     .notice .actions a.whatsapp{background:linear-gradient(180deg,#22c55e,#16a34a);color:#062315;border:none}
+    @media (max-width: 640px) {
+      header .bar {
+        padding: 8px 0;
+      }
+
+      .logo-badge {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+      }
+
+      .logo strong {
+        font-size: 14px;
+      }
+
+      .logo .meta {
+        font-size: 12px;
+      }
+
+      nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+
+      .fb-text {
+        display: none;
+      }
+
+      .phone-link {
+        display: inline-flex;
+        padding: 8px 10px;
+        font-size: 18px;
+      }
+    }
+
   </style>
   <!-- Schema.org JSON‑LD -->
   <script type="application/ld+json">
